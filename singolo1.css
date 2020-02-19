@@ -1,0 +1,163 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 1020px;
+}
+
+span {
+	color: #f06c64;
+}
+
+.title {
+	font-size: 25px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-align: left;
+	margin: 0px;
+	text-transform: uppercase;
+	padding-left: 10px;
+
+}
+
+header {
+	width: 1020px;
+	height: 95px;
+	background-color: #2d303a;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+
+}
+
+header ul {
+	display: inline-flex;
+	flex-direction: row;
+	list-style: none;
+	padding-inline-end: 10px;
+
+}
+
+nav li {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 6px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-align: left;
+	margin: 10px;
+}
+
+figure {
+	margin:0px;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: left;
+	font-style: bold;
+}
+
+.services-header {
+	margin: 0px;
+	padding: 45px 40px 0px 40px;
+}
+
+.services-p {
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-family: 'Lato', sans-serif;
+	text-align: left;
+}
+
+.services-text {
+	width: 219px;
+	height: 128px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: left;
+
+}
+
+.services-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.services-item {
+	flex: 1;
+	flex-basis: 33%;
+}
+
+.services-item-icon-wrapper {
+	display: inline;
+	vertical-align: top;
+}
+
+.services-item-comtent-wrapper {
+	display: inline-block;
+}
+
+.services-item-name {
+	margin-top: 0;
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: "Lato";
+	font-weight: 900;
+	text-align: left;
+}
+
+#nav-li {
+	color: #f06c64;
+}
+
+.slider {
+	display: inline-flex;
+	align-items: center;
+	width: 1020px;
+	height: 594px;
+	background-color: #f06c64;
+	justify-content: space-evenly;
+}
+
+.services {
+	width: 1020px;
+	background-color: #f2f2f2;
+}
+
+#services-bottom {
+	width: 1020px;
+	height: 6px;
+	background-color: #ffffff;
+}
+
+#header-bottom {
+	width: 1020px;
+	height: 6px;
+	background-color: #323746;
+}
+
+#slider-bottom {
+	width: 1020px;
+	height: 6px;
+	background-color: #ea676b;
+}
