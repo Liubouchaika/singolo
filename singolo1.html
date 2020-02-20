@@ -3,19 +3,23 @@
 <head>
 	<title>Singolo</title>
 	<link  rel="stylesheet" href="singolo1.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="wrapper">
 		<header>
-			<div style="display: flex; flex-flow: wrap; height: 89px; align-items: center; padding-left: 20px; padding-right: 20px; ">
-				<h1 class="title">Singolo<span>*</span></h1>
+			<div class="header-top">
+				<h1 class="title pointer" >Singolo<span>*</span></h1>
 				<nav style="flex: 1; text-align: right;">
 					<ul>
 						<li id="nav-li">Home</li>
-						<li>Services</li>
+						<span class="nav-dot">&#183;</span>
+						<li>Services</li>\
+						<span class="nav-dot">&#183;</span>
 						<li>Portfolio</li>
+						<span class="nav-dot">&#183;</span>
 						<li>About</li>
+						<span class="nav-dot">&#183;</span>
 						<li>Contact</li>
 					</ul>
 				</nav>
@@ -23,10 +27,10 @@
 			<div id="header-bottom"></div>
 		</header>
 		<main>
-			<section>
-				<article class="slider">
+			<section class="slider">
+				<article class="slider-items">
 					<figure>
-						<img src="assets/chev-left.png">
+						<img class="pointer" src="assets/chev-left.png" >
 					</figure>
 
 					<figure>
@@ -42,7 +46,7 @@
 					</figure>
 
 					<figure>
-						<img src="assets/chev-right.png">
+						<img class="pointer" src="assets/chev-right.png">
 					</figure>
 				</article>
 				<div id="slider-bottom"></div>
@@ -53,7 +57,7 @@
 					<div class="services-header">
 						<h2>Our Services</h2>
 						<p class="services-p">
-							Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elic. Fusce dapibus, tellus ac cursus, tortor mauris condimentum nibh.
+							Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
 						</p>
 					</div>	
 					<div class="services-items">
@@ -61,7 +65,7 @@
 							<div class="services-item-icon-wrapper">
 								<img src="assets/pen.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
+							<div class="services-item-content-wrapper">
 								<h3 class="services-item-name"> Custom Design</h3>
 								<p class="services-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
 							</div>
@@ -69,9 +73,9 @@
 
 						<div class="services-item">
 							<div class="services-item-icon-wrapper">
-								<img src="assets/pen.svg">
+								<img src="assets/bulb.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
+							<div class="services-item-content-wrapper">
 								<h3 class="services-item-name">Inovative Ideas</h3>
 								<p class="services-text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
 							</div>
@@ -79,19 +83,19 @@
 
 						<div class="services-item">
 							<div class="services-item-icon-wrapper">
-								<img src="assets/pen.svg">
+								<img src="assets/heart.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
+							<div class="services-item-content-wrapper">
 								<h3 class="services-item-name">Love Is The Answer</h3>
-								<p class="services-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Queisque condimentum.</p>
+								<p class="services-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
 							</div>
 						</div>
 
 						<div class="services-item">
 							<div class="services-item-icon-wrapper">
-								<img src="assets/pen.svg">
+								<img src="assets/phone.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
+							<div class="services-item-content-wrapper">
 								<h3 class="services-item-name">Responsive Layout</h3>
 								<p class="services-text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
 							</div>
@@ -99,19 +103,19 @@
 
 						<div class="services-item">
 							<div class="services-item-icon-wrapper">
-								<img src="assets/pen.svg">
+								<img src="assets/bubble.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
-								<h3 class="services-item-name">24/7 Support</h3>
+							<div class="services-item-content-wrapper">
+								<h3 class="services-item-name">24 / 7 Support</h3>
 								<p class="services-text">Vivamus vel quam lacinia, tincidunt dui non, vehicula. Nulla a sem erat. Pelletesque egestas venenatis lorem.</p>
 							</div>
 						</div>
 
 						<div class="services-item">
 							<div class="services-item-icon-wrapper">
-								<img src="assets/pen.svg">
+								<img src="assets/star.svg">
 							</div>
-							<div class="services-item-comtent-wrapper">
+							<div class="services-item-content-wrapper">
 								<h3 class="services-item-name">Feel Like A Star</h3>
 								<p class="services-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
 							</div>
