@@ -72,6 +72,14 @@ figure {
 	margin:0px;
 }
 
+.figure-phone-left {
+	margin-right: 6px;
+}
+
+.figure-phone-right {
+	margin-left: 6px;
+}
+
 h2 {
 	font-size: 30px;
 	line-height: 18px;
@@ -182,13 +190,17 @@ h2 {
 	justify-content: space-around;
 	width: 1000px;
     height: 594px;
-	padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
+   /* margin-left: 11px;
+    margin-right: 10px;*/
+    
 }
 
 .services {
 	width: 1020px;
 	background-color: #f2f2f2;
+	height: 494px;
 }
 
 .pointer {
