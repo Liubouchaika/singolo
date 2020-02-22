@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #666d89;stroke-width: 2 } 
+	</style>
+	<path id="Ellipse" class="shp0" d="M29.5 0C45.79 0 59 13.21 59 29.5C59 45.79 45.79 59 29.5 59C13.21 59 0 45.79 0 29.5C0 13.21 13.21 0 29.5 0Z" />
+</svg>
