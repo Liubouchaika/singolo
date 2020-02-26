@@ -1,0 +1,191 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 1020px;
+}
+
+#portfolio {
+	width: 1020px;
+	height: 870px;
+	background-color: #2d303a;
+	margin:0px;
+	
+}
+
+#portfolio-top {
+	width: 940px;
+	background-color: #2d303a;
+	padding: 69px 40px 0px 40px;
+}
+
+#portfolio-bottom {
+	/*width: 1020px;*/
+	height: 6px;
+	background-color: #323746;
+
+}
+
+#portfolio-header {
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: "Lato";
+	font-weight: 900;
+	text-align: left;
+	margin:0px;
+	padding: 0px;
+
+}
+
+#portfolio-text {
+	width: 940px;
+	/*height: 57px;*/
+	font-size: 18px;
+	/*line-height: 30px;*/
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 300;
+	text-align: left;
+	margin: 31px 0px 0px 0px;
+}
+
+#portfolio-nav {
+	display: inline-flex;
+	flex-direction: row;
+	list-style: none;
+	padding-left: 40px;
+	justify-content: space-between;
+	width: 288px;
+	margin-top: 15px;
+	margin-bottom: 18px
+}
+
+.portfolio-nav-li {
+	/*width: 57px;
+	height: 22px;*/
+	border-radius: 5px;
+	border: 1px solid #666d89;
+	padding: 3px 7px 4px 7px;
+	font-size: 11px;
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: justify;
+	cursor: pointer;
+}
+
+#portfolio-nav-li {
+	color: #dedede;
+	border: 1px solid #dedede;
+}
+
+#portfolio-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 40px;
+	padding-right: 40px;
+    padding-bottom: 69px;
+	width: 940px;
+	height: 600px;
+}
+
+.portfolio-item {
+	display: flex;
+	width: 221px;
+	height: 188px;
+	margin-bottom: 20px;
+}
+
+#about-us {
+	margin: 0px
+	padding:0px;
+	width: 1020px;
+	height: 728px;
+	background-color: #f2f2f2;
+	
+}
+
+.about-us-header {
+	margin: 0px;
+	padding: 38px 40px 0px 40px;
+}
+
+#about-us-title{
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: left;
+	font-style: bold;
+	margin: 30px 0px 27px 0px;
+}
+
+#about-us-text {
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	font-weight: 300;
+	margin: 0px 0px 45px 0px;
+}
+
+.about-us-items {
+	padding: 0px 40px 80px 40px;
+	display:inline-flex;
+	flex-wrap: wrap;
+	flex-basis: 33%; 
+	justify-content: space-between;
+	width: 940px;
+
+}
+
+.about-us-photo{
+	max-height: 301px;
+	max-height: 301px
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.about-us-name {
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: "Lato";
+	font-weight: 900;
+	text-align: left;
+	margin: 13px 0px 9px 0px;
+	}
+
+.about-us-info {
+	width: 300px;
+	height: 175px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: left;
+	margin: 0px;
+
+}
+
+.about-us-contacts {
+
+}
+
+#about-us-bottom {
+	width: 1020px;
+	height: 6px;
+	background-color: #ffffff;
+}
