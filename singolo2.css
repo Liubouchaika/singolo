@@ -140,7 +140,7 @@ body {
 }
 
 .about-us-items {
-	padding: 0px 40px 80px 40px;
+	padding: 0px 40px 65px 40px;
 	display:inline-flex;
 	flex-wrap: wrap;
 	flex-basis: 33%; 
@@ -168,8 +168,8 @@ body {
 	}
 
 .about-us-info {
-	width: 300px;
-	height: 175px;
+	width: 301px;
+	height: 65px;
 	font-size: 12px;
 	line-height: 22px;
 	color: #767e9e;
@@ -181,7 +181,21 @@ body {
 }
 
 .about-us-contacts {
+	display: inline-flex;
+}
 
+.contact-img {
+	display: flex;
+    align-items: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid #666d89;
+	margin: 0px 6px 0px 0px;
+}
+
+.contact-img img {
+	margin:auto;
 }
 
 #about-us-bottom {
