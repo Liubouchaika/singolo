@@ -196,6 +196,7 @@ max-width: 304px;
 	border-radius: 50%;
 	border: 1px solid #666d89;
 	margin: 0px 6px 0px 0px;
+	cursor: pointer;
 }
 
 .contact-img img {
