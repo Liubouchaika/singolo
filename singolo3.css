@@ -53,6 +53,8 @@ body {
 .get-a-quote-form {
 	display: inline-flex;
 	margin: 47px 40px 25px 40px;
+	justify-content: space-between;
+	width:940px;
 }
 
 input {
@@ -114,8 +116,67 @@ input[type="submit"] {
 	color: #d6564f;
 	font-weight: 700;
 	font-size: 16px;
+}
+
+.get-a-quote-form-contacts-info {
+	width: 300px;
+	height: 137px;
+	font-size: 12px;
+	line-height: 21px;
+	color: #f0d8d9;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: justify;
+	margin: 0px;
+	letter-spacing: -0.15px;
+}
+
+.get-a-quote-form-contacts {
+	width:300px;
+	margin: 0px;
+	padding: 0px;
 
 }
+
+#get-a-quote-form-contacts-info{
+	font-size: 18px;
+	line-height: 18px;
+	color: #f0d8d9;
+	font-family: "Lato";
+	font-weight: 900;
+	text-align: justify;
+	margin: 1px 0px 10px 0px;
+
+}
+
+.get-a-quote-form-contacts-info p {
+	margin: 0px;
+}
+
+.form-contacts{
+	display: inline-flex;
+	text-align: center;
+}
+
+.form-contacts-img{
+	text-align: center; 
+	width: 13px;
+}
+
+.form-contact{
+
+	width: 200px;
+	font-size: 12px;
+	line-height: 21px;
+	color: #f0d8d9;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: justify;
+	margin: 0px;
+	letter-spacing: -0.15px;
+	padding-left: 10px;
+}
+
 
 
 #get-a-quote-bottom {
