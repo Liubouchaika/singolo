@@ -49,7 +49,6 @@ header ul {
 	flex-direction: row;
 	list-style: none;
 	padding-inline-end: 10px;
-
 }
 
 nav li {
@@ -169,16 +168,12 @@ h2 {
 #nav-li {
 	color: #f06c64;
 	cursor: pointer;
-
 }
 
 .slider {
-	/*display: inline-flex;
-	align-items: center;*/
 	width: 1020px;
 	height: 600px;
 	background-color: #f06c64;
-	/*justify-content: space-evenly;*/
 }
 
 .slider-items {
@@ -190,9 +185,6 @@ h2 {
     height: 594px;
     padding-left: 10px;
     padding-right: 10px;
-   /* margin-left: 11px;
-    margin-right: 10px;*/
-    
 }
 
 .services {
@@ -228,7 +220,6 @@ h2 {
 	height: 869px;
 	background-color: #2d303a;
 	margin:0px;
-	
 }
 
 #portfolio-top {
@@ -238,10 +229,8 @@ h2 {
 }
 
 #portfolio-bottom {
-	/*width: 1020px;*/
 	height: 6px;
 	background-color: #323746;
-
 }
 
 #portfolio-header {
@@ -253,14 +242,11 @@ h2 {
 	text-align: left;
 	margin:0px;
 	padding: 0px;
-
 }
 
 #portfolio-text {
 	width: 940px;
-	/*height: 57px;*/
 	font-size: 18px;
-	/*line-height: 30px;*/
 	color: #767e9e;
 	font-family: "Lato";
 	font-weight: 300;
@@ -280,8 +266,6 @@ h2 {
 }
 
 .portfolio-nav-li {
-	/*width: 57px;
-	height: 22px;*/
 	border-radius: 5px;
 	border: 1px solid #666d89;
 	padding: 3px 7px 4px 7px;
@@ -312,8 +296,8 @@ h2 {
 
 .portfolio-item {
 	display: flex;
-	width: 221px;
-	height: 188px;
+	width: 220px;
+	height: 187px;
 	margin-bottom: 20px;
 }
 
@@ -323,7 +307,6 @@ h2 {
 	width: 1020px;
 	height: 734px;
 	background-color: #f2f2f2;
-	
 }
 
 .about-us-header {
@@ -331,7 +314,7 @@ h2 {
 	padding: 38px 40px 0px 40px;
 }
 
-#about-us-title{
+#about-us-title {
 	font-size: 30px;
 	line-height: 18px;
 	color: #666d89;
@@ -359,19 +342,17 @@ h2 {
 	flex-basis: 33%; 
 	justify-content: space-between;
 	width: 945px;
-
 }
 
 .about-us-item {
-max-width: 304px;
+	max-width: 304px;
 }
 
-.about-us-photo{
+.about-us-photo {
 	max-width: 301px;
 	max-height: 301px;
 	margin: 0px;
 	padding: 0px;
-
 }
 
 .about-us-name {
@@ -382,10 +363,9 @@ max-width: 304px;
 	font-weight: 900;
 	text-align: left;
 	margin: 13px 0px 9px 0px;
-	}
+}
 
 .about-us-info {
-	/*width: 301px;*/
 	height: 65px;
 	font-size: 12px;
 	line-height: 21px;
@@ -394,7 +374,6 @@ max-width: 304px;
 	font-weight: 400;
 	text-align: justify;
 	margin: 0px;
-
 }
 
 .about-us-contacts {
@@ -427,14 +406,11 @@ max-width: 304px;
 	height: 654px;
 	margin: 0px;
 	background-color: #f06c64;
-	
 }
 
 .get-a-quote-header {
 	padding: 68px 0px 0px 40px;
 	text-align: left;
-	
-
 }
 
 .get-a-quote-header p {
@@ -482,7 +458,6 @@ input {
     text-align: left;
     padding: 0px 0px 0px 15px;
     margin-bottom: 16px
-
 }
 
 input::-webkit-input-placeholder { color: #f48c8f; }
@@ -494,7 +469,6 @@ textarea::-webkit-input-placeholder { color: #f48c8f; }
 textarea:-ms-input-placeholder { color:#f48c8f; }
 textarea::-ms-input-placeholder { color: #f48c8f; }
 textarea::placeholder { color: #f48c8f; } 
-
 
 textarea {
 	resize: none;
@@ -546,7 +520,6 @@ input[type="submit"] {
 	width:300px;
 	margin: 0px;
 	padding: 0px;
-
 }
 
 #get-a-quote-form-contacts-info{
@@ -574,8 +547,7 @@ input[type="submit"] {
 	width: 13px;
 }
 
-.form-contact{
-
+.form-contact {
 	width: 200px;
 	font-size: 12px;
 	line-height: 21px;
@@ -587,8 +559,6 @@ input[type="submit"] {
 	letter-spacing: -0.15px;
 	padding-left: 10px;
 }
-
-
 
 #get-a-quote-bottom {
 	width: 1020px;
@@ -611,8 +581,6 @@ input[type="submit"] {
 	width: 95px;
 	text-align: center;
 	margin:30px 41px;
-	
-
 }
 
 .copyright p {
