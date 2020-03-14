@@ -4,6 +4,7 @@
 	<title>Singolo</title>
 	<link  rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>>
 </head>
 <body>
 	<div id="wrapper">
@@ -134,10 +135,10 @@
 				</div>
 				<div>
 					<ul id ="portfolio-nav">
-						<il class="portfolio-nav-li" id="portfolio-nav-li">All</il>
-						<il class="portfolio-nav-li">Web Design</il>
-						<il class="portfolio-nav-li">Graphic Design</il>
-						<il class="portfolio-nav-li">Artwork</il>
+						<il class="portfolio-nav-li portfolio-nav-li-active" onclick="handleTagClick(this, 'all');">All</il>
+						<il class="portfolio-nav-li" onclick="handleTagClick(this, 'wed');">Web Design</il>
+						<il class="portfolio-nav-li" onclick="handleTagClick(this, 'graphic');">Graphic Design</il>
+						<il class="portfolio-nav-li" onclick="handleTagClick(this, 'artwork');">Artwork</il>
 					</ul>
 				</div>
 
