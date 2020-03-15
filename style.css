@@ -33,6 +33,7 @@ header {
 	background-color: #2d303a;
 	margin: 0px;
 	padding: 0px;
+	position: fixed;
 }
 
 .header-top {
@@ -55,7 +56,6 @@ nav li {
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 6px;
-	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-align: left;
@@ -63,6 +63,14 @@ nav li {
 	cursor: pointer;
 	padding-top: 10px;
 	letter-spacing: -0.15px;	
+}
+
+nav li a {
+	color: #ffffff;
+}
+
+main {
+	padding-top: 95px;
 }
 
 figure {
@@ -165,7 +173,7 @@ h2 {
 	text-align: left;
 }
 
-#nav-li {
+.nav-li-active a {
 	color: #f06c64;
 	cursor: pointer;
 }
@@ -215,7 +223,7 @@ h2 {
 	background-color: #ea676b;
 }
 
-#portfolio {
+.portfolio {
 	width: 1020px;
 	height: 869px;
 	background-color: #2d303a;
@@ -233,7 +241,7 @@ h2 {
 	background-color: #323746;
 }
 
-#portfolio-header {
+.portfolio-header {
 	font-size: 30px;
 	line-height: 18px;
 	color: #666d89;
@@ -314,7 +322,7 @@ h2 {
 	padding: 38px 40px 0px 40px;
 }
 
-#about-us-title {
+.about-us-title {
 	font-size: 30px;
 	line-height: 18px;
 	color: #666d89;
@@ -522,7 +530,7 @@ input[type="submit"] {
 	padding: 0px;
 }
 
-#get-a-quote-form-contacts-info{
+.get-a-quote-form-contacts-info-title{
 	font-size: 18px;
 	line-height: 18px;
 	color: #f0d8d9;
@@ -618,4 +626,8 @@ input[type="submit"] {
 
 .image-border {
 	border: 5px solid #F06C64;
+}
+
+nav a {
+	text-decoration: none;
 }

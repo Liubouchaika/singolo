@@ -47,3 +47,12 @@ let images = document.querySelectorAll(".portfolio-item");
 images.forEach(item => {
 	item.addEventListener("click", imagesBorder, false);
 });
+
+function navTagClick(element) {
+	let navElements = document.querySelectorAll("nav li");
+	console.log(navElements);
+	navElements.forEach( navElement => {
+		navElement.classList.remove("nav-li-active");
+	});
+	element.classList.add("nav-li-active");
+};

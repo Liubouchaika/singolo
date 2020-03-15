@@ -9,25 +9,25 @@
 	<div id="wrapper">
 		<header>
 			<div class="header-top">
-				<h1 class="title pointer" >Singolo<span>*</span></h1>
+				<h1 class="title pointer">Singolo<span>*</span></h1>
 				<nav style="flex: 1; text-align: right;">
-					<ul>
-						<li id="nav-li">Home</li>
+					<ul id = "nav">
+						<li class="nav-li-active" onclick="navTagClick(this, 'home');"><a href="#home">Home</a></li>
 						<span class="nav-dot">&#183;</span>
-						<li>Services</li>\
+						<li onclick="navTagClick(this);"><a href="#services">Services</a></li>
 						<span class="nav-dot">&#183;</span>
-						<li>Portfolio</li>
+						<li onclick="navTagClick(this);"><a href="#portfolio-top-nav">Portfolio</a></li>
 						<span class="nav-dot">&#183;</span>
-						<li>About</li>
+						<li onclick="navTagClick(this);"><a href="#about">About</a></li>
 						<span class="nav-dot">&#183;</span>
-						<li>Contact</li>
+						<li onclick="navTagClick(this);"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div id="header-bottom"></div>
 		</header>
 		<main>
-			<section class="slider">
+			<section class="slider" id="home">
 				<article class="slider-items">
 					<figure>
 						<img class="pointer" src="assets/chev-left.png" >
@@ -53,9 +53,9 @@
 			</section>
 
 			<section>
-				<article class="services">
+				<article class="services"  id="services">
 					<div class="services-header">
-						<h2>Our Services</h2>
+						<h2 >Our Services</h2>
 						<p class="services-p">
 							Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
 						</p>
@@ -127,9 +127,9 @@
 					
 				</div>
 			</section>
-			<section id="portfolio">
+			<section class="portfolio" id="portfolio-top-nav">
 				<div id="portfolio-top">
-					<p id="portfolio-header">Portfolio</p>
+					<p class="portfolio-header" >Portfolio</p>
 					<p id="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				</div>
 				<div>
@@ -171,8 +171,8 @@
 			</section>
 
 			<section id="about-us">
-				<div class="about-us-header">
-					<p id="about-us-title">About Us</p>
+				<div class="about-us-header" id="about">
+					<p class="about-us-title">About Us</p>
 					<p id="about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 				</div>
 				<div class="about-us-items">
@@ -249,9 +249,9 @@
 				</div>
 				<div id="about-us-bottom"></div>
 			</section>
-			<section class="get-a-quote">
+			<section class="get-a-quote " id="contact">
 				<div class="get-a-quote-header">
-					<p>Get a Quote</p>
+					<p >Get a Quote</p>
 					<p id="get-a-quote-header-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 				</div>
 
@@ -282,7 +282,7 @@
 
 					<div class="get-a-quote-form-contacts">
 						<div class="get-a-quote-form-contacts-info">
-							<p id="get-a-quote-form-contacts-info">Contact Information</p>
+							<p class="get-a-quote-form-contacts-info-title">Contact Information</p>
 							<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
 						</div>
 						<div>
