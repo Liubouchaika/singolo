@@ -34,3 +34,16 @@ function imagesOrder() {
 	let removedChild = portfolio.removeChild(images[0]);
 	portfolio.appendChild(removedChild);
 };
+
+function imagesBorder(event) {
+	let images = document.querySelectorAll(".image-border");
+	images.forEach(item => {
+		item.classList.remove("image-border");
+	});
+	event.target.classList.toggle("image-border");
+};
+
+let images = document.querySelectorAll(".portfolio-item");
+images.forEach(item => {
+	item.addEventListener("click", imagesBorder, false);
+});
