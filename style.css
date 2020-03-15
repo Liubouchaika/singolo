@@ -611,3 +611,7 @@ input[type="submit"] {
 .contact-img img {
 	margin:auto;
 }
+
+.hidden {
+	display: none;
+}
