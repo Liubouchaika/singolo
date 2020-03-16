@@ -56,3 +56,69 @@ function navTagClick(element) {
 	});
 	element.classList.add("nav-li-active");
 };
+
+let items = document.querySelectorAll('.slider-item');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem (num) {
+	currentItem = (num + items.length) % items.length;
+}
+
+function hideItem(direction) {
+	isEnabled = false;
+
+	let item = items[currentItem];
+	let listener = function() {
+		console.log('=== hide animation end');
+		item.classList.remove('active', direction);
+		item.removeEventListener('animationend', listener);
+	};
+
+	item.classList.add(direction);
+
+	item.addEventListener('animationend', listener);
+}
+
+function showItem(direction) {
+
+	let item = items[currentItem];
+	let listener = function() {
+		console.log('=== show animation end');
+		item.classList.remove('next', direction);
+		item.classList.add('active');
+		item.removeEventListener('animationend', listener);
+
+		isEnabled = true;
+	};
+
+	item.classList.add('next', direction);
+	item.addEventListener('animationend', listener);
+}
+
+function previousItem(num) {
+	hideItem('to-right');
+	changeCurrentItem (num - 1);
+	showItem('from-left');
+}
+
+function nextItem(num) {
+	hideItem('to-left');
+	changeCurrentItem (num + 1);
+	showItem('from-right');
+}
+
+
+document.querySelector('.left-arrow').addEventListener('click', function() {
+	console.log('>>> left click:', isEnabled, currentItem);
+	if (isEnabled) {
+		previousItem(currentItem);
+	}
+});
+
+document.querySelector('.right-arrow').addEventListener('click', function() {
+	console.log('>>> right click:', isEnabled, currentItem);
+	if (isEnabled) {
+		nextItem(currentItem);
+	}
+});
