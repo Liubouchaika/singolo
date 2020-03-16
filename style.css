@@ -182,17 +182,44 @@ h2 {
 	width: 1020px;
 	height: 600px;
 	background-color: #f06c64;
+ 	position: relative;
 }
 
 .slider-items {
-	display: inline-flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	width: 1000px;
+	/*display: inline-flex;*/
+	/*flex-direction: row;*/
+	/*align-items: center;*/
+	/*justify-content: space-around;*/
+	width: 1020px;
     height: 594px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    /*transition: transform 0.6s ease;*/
+}
+
+.slides {
+	position: absolute;
+	display: flex;
+	height: inherit;
+	width: inherit;
+	overflow: hidden;
+}
+
+.slider-item {
+	display: flex;
+	width: inherit;
+	flex: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.left-arrow {
+	position: absolute;
+}
+
+.right-arrow {
+	position: absolute;
+	right: 0;
 }
 
 .services {
@@ -630,4 +657,8 @@ input[type="submit"] {
 
 nav a {
 	text-decoration: none;
+}
+
+.active {
+	display: block;
 }
