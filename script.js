@@ -122,3 +122,17 @@ document.querySelector('.right-arrow').addEventListener('click', function() {
 		nextItem(currentItem);
 	}
 });
+
+function toggleClickable(event) {
+	let eventClass = event.target.classList.contains('phone-vertical') ? 'phone-vertical' : 'phone-horizontal';
+	let phonesToToggle = document.querySelectorAll('.' + eventClass + '-black');
+	phonesToToggle.forEach(item => {
+		item.classList.toggle('hidden');
+	});
+};
+
+let phonesClickable = document.querySelectorAll(".phone-clickable");
+phonesClickable.forEach(item => {
+	item.addEventListener("click", toggleClickable, false);
+});
+

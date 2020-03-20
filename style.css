@@ -79,11 +79,39 @@ figure {
 
 .figure-phone-left {
 	margin-right: 6px;
+	display: block;
+    position: absolute;
+    left: 111px;
 }
 
 .figure-phone-right {
-	margin-left: 6px;
+	margin-right: 6px;
+	display: block;
+    position: absolute;
+    top: 172px;
+    right: 106px;
 }
+
+.left-screen {
+	z-index: 1;
+	top: 62px;
+	position: absolute;
+	left: 12px;
+	cursor: pointer;
+}
+
+.right-screen {
+	z-index: 1;
+	top: 13px;
+	right: 87px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.phone-clickable {
+	cursor: pointer;
+}
+
 
 h2 {
 	font-size: 30px;
