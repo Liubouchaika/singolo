@@ -272,25 +272,25 @@
 
 				<div class="get-a-quote-form">
 					<div class="get-a-quote-form-items">
-						<form action="">
+						<form action="" onsubmit="return false">
 							 <div class="name">
-			          			<input type="text" name="name"  placeholder ="Name (Required)" title="Name" required>
+			          			<input class="form-input" type="text" name="name"  placeholder ="Name (Required)" title="Name" required>
 		        			</div>
 
 		        			<div class="Email">
-			       				<input type="email" name="email" placeholder="Email (Required)" title="mail" required  >
+			       				<input   class="form-input" type="email" name="email" placeholder="Email (Required)" title="mail" required  >
 		        			</div>
 
 		        			<div class="subject">
-			          			<input type="text" name="subject" placeholder="Subject">
+			          			<input  class="form-input" type="text" name="subject" placeholder="Subject" value="">
 		        			</div>
 
 		        			<div>
-			        			 <textarea name="text" placeholder="Describe your project in detail..."></textarea>
+			        			 <textarea  class="form-input" name="text" placeholder="Describe your project in detail..." value=""></textarea>
 			        		</div>
 
 			        		<div id="submit">
-			        			<input type="submit" value="Submit">
+			        			<input type= "submit" class="submit" value="Submit">
 			        		</div>
 						</form>
 					</div>

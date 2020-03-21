@@ -136,3 +136,39 @@ phonesClickable.forEach(item => {
 	item.addEventListener("click", toggleClickable, false);
 });
 
+
+function getFormInfo(event) {
+	let formInputs= document.querySelectorAll(".form-input");
+
+	let name = formInputs[0].value;
+	let email = formInputs[1].value;
+	let subject = formInputs[2].value;
+	let description = formInputs[3].value;
+
+	if (!name || !email) {
+		return;
+	}
+	if (!subject) {
+		subject = 'Without subject';
+	} else {
+		subject = 'Subject: ' + subject;
+	}
+
+	if (!description) {
+		description = 'Without description';
+	} else {
+		description = 'Description: ' + description;
+	}
+
+	alert('The letter was sent \n' + subject + '\n' + description + '\nOK');
+
+	formInputs[0].value = '';
+	formInputs[1].value = '';
+	formInputs[2].value = '';
+	formInputs[3].value = '';
+}
+
+let submit = document.querySelectorAll(".submit");
+submit.forEach(item => {
+	item.addEventListener("click", getFormInfo, false);
+});
