@@ -862,3 +862,196 @@ nav a {
 		width: 100%;		
 	}
 }
+
+@media (min-width: 375px) and (max-width: 767px) {
+	.left-arrow {
+		padding: 0px;
+		left: 3%;
+	}
+
+	.right-arrow {
+		padding: 0px;
+		right:5%;
+	} 
+	
+	#wrapper {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	.title{
+		margin-left: auto;
+		margin-right: auto; 
+	}
+
+	nav{
+		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.figure-phone-left {
+	    width: 23%;
+	    left: 12%;
+	}
+
+	.figure-phone-right {
+	    width: 46%;
+	    right: 12%;
+	}
+
+	.services-item {
+		flex: 1;
+		flex-basis: 33%;
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.slider {
+		width: 100%;
+		height: 218px;
+	}
+
+	.slider-items {
+		width: 100%;
+	    height: 99%;
+	}
+
+	.services {
+		width: 100%;
+	}
+
+	.pointer {
+		cursor: pointer;
+	}
+
+	.services-header {
+		padding: 7% 8% 0px 8%;
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	.services-items {
+		padding-left: 8%;
+    	padding-right: 8%;
+    	padding-top: 0%;
+    	padding-bottom: 7%;
+	}
+
+	#services-bottom {
+		width: 100%;
+	}
+
+	#header-bottom {
+		width: 100%;
+	}
+
+	#slider-bottom {
+		width: 100%;
+	}
+
+	.portfolio {
+		width: 100%;
+	}
+
+	#portfolio-top{
+		padding: 7% 10% 0px 8%;
+		line-height: 30px;
+	}
+
+	#portfolio-nav {
+		padding-left: 8%;
+	}
+
+	.portfolio-items {
+		padding-left: 8%;
+    	padding-right: 8%;
+    	padding-bottom: 7%;
+	}
+
+	.portfolio-item {
+		width: 48%;
+		margin-bottom: 4%;
+		height: auto;
+	}
+
+	.about-us-item {
+		width: 100%;
+	}
+
+	.about-us-photo {
+		width: 100%;
+	}
+
+	.contact-img img {
+		margin:auto;
+	}
+
+	#about-us-bottom {
+		width: 100%;
+	}
+
+	.get-a-quote {
+		width: 100%;
+		height: auto;
+	}	
+
+	.get-a-quote-form {
+		width:79%;
+		flex-wrap: wrap;
+   		flex-basis: auto;
+	}
+
+	#get-a-quote-header-text {
+		height: auto;
+	}
+
+	.get-a-quote-form-items{
+		width:100%;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	#submit {
+		text-align: center;
+		margin: auto;
+	}
+
+	.get-a-quote-form-contacts {
+		width:100%;
+	}
+
+	#get-a-quote-bottom {
+		width: 100%;
+		height: 6px;
+	}
+
+	.footer {
+		width: 100%;		
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.footer-contacts {
+		margin: 21px auto;
+	}
+}
