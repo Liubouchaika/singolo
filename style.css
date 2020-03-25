@@ -95,18 +95,30 @@ figure {
 
 .left-screen {
 	z-index: 1;
-	top: 13%;
 	position: absolute;
-	left: 5%;
 	cursor: pointer;
+	width: 90%;
+    margin-top: 25%;
+    top: 0;
+    left: 0;
+    margin-left: 5%;
 }
 
 .right-screen {
 	z-index: 1;
-	top: 13px;
-	right: 87px;
+	top: 0;
+	left: 0;
 	position: absolute;
 	cursor: pointer;
+	margin-top: 2%;
+	margin-left: 12%;
+	width: 84%;
+	height: 90%
+}
+
+.right-screen img, .left-screen img {
+	height: inherit;
+	width: inherit;
 }
 
 .phone-clickable {
