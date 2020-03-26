@@ -55,6 +55,7 @@ function navTagClick(element) {
 		navElement.classList.remove("nav-li-active");
 	});
 	element.classList.add("nav-li-active");
+	openMenu();
 };
 
 let items = document.querySelectorAll('.slider-item');
@@ -171,4 +172,17 @@ function getFormInfo(event) {
 let submit = document.querySelectorAll(".submit");
 submit.forEach(item => {
 	item.addEventListener("click", getFormInfo, false);
+});
+
+function openMenu (event) {
+	let blocksToToggle = document.querySelectorAll(".burger");
+	blocksToToggle.forEach(item => {
+		item.classList.toggle('open-menu');
+	});
+
+}
+
+let headerBurger= document.querySelectorAll(".header-burger");
+headerBurger.forEach(item => {
+	item.addEventListener("click", openMenu, false);
 });
