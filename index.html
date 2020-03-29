@@ -4,58 +4,100 @@
 	<title>Singolo</title>
 	<link  rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id="wrapper">
 		<header>
 			<div class="header-top">
-				<h1 class="title pointer" >Singolo<span>*</span></h1>
-				<nav style="flex: 1; text-align: right;">
-					<ul>
-						<li id="nav-li">Home</li>
-						<span class="nav-dot">&#183;</span>
-						<li>Services</li>\
-						<span class="nav-dot">&#183;</span>
-						<li>Portfolio</li>
-						<span class="nav-dot">&#183;</span>
-						<li>About</li>
-						<span class="nav-dot">&#183;</span>
-						<li>Contact</li>
-					</ul>
+				<div class="header-burger">
+					<span> </span>
+				</div>
+				<h1 class="title pointer">Singolo<span>*</span></h1>
+				<nav>
+					<ul id = "nav">
+							<li class="nav-li-active" onclick="navTagClick(this, 'home');"><a href="#home">Home</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#services">Services</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#portfolio-top-nav">Portfolio</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#about">About</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#contact">Contact</a></li>
+						</ul>
 				</nav>
+				<nav class="burger">
+					<div class="nav-block">
+						<div class="menu-top">
+							<div class="header-burger active-menu">
+								<span> </span>
+							</div>
+							<h1 class="title menu">Singolo<span>*</span>
+							</h1>
+						</div>
+						<ul id = "nav">
+							<li class="nav-li-active" onclick="navTagClick(this, 'home');"><a href="#home">Home</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#services">Services</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#portfolio-top-nav">Portfolio</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#about">About</a></li>
+							<span class="nav-dot">&#183;</span>
+							<li onclick="navTagClick(this);"><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="shadowed-screen burger"></div>
 			</div>
 			<div id="header-bottom"></div>
 		</header>
 		<main>
-			<section class="slider">
+
+			<section class="slider" id="home">
 				<article class="slider-items">
-					<figure>
-						<img class="pointer" src="assets/chev-left.png" >
-					</figure>
 
-					<figure class="figure-phone-left">
-						<div>
-							<img  src="assets/iPhone Vertical.png">
-							<img  scr="assets/Shadow-vertical.png">
+					
+					<div  class="slides">
+						<div class="slider-item active">
+							<div class="figure-phone-left">
+								<div class="phone">
+									<img class="phone-vertical phone-clickable" style="width: 100%; height: auto;" src="assets/iPhone Vertical.png">
+								</div>
+								<div class="left-screen screen phone-vertical-black hidden">
+									<img class="phone-vertical phone-clickable" src="assets/Screen1.png" >
+								</div>
+							</div>
+							<div class="figure-phone-right">
+								<div class="phone" >
+									<img style="width: 100%; height: auto;" class="phone-horizontal phone-clickable" src="assets/iPhone Horizontal.png">
+								</div>
+								<div class="right-screen screen hidden phone-horizontal-black">
+									<img class="phone-horizontal phone-clickable" src="assets/Screen2.png">
+								</div>
+							</div>
 						</div>
-					</figure>
+						<div  class="slider-item">
+							<img style="width: 100%; height: auto;" src="assets/Slide-2.png">
+						</div>
+					</div>
 
-					<figure class="figure-phone-right">
-						<img src="assets/iPhone Horizontal.png">
-						<img scr="assets/Shadow-horizontal.png">
-					</figure>
 
-					<figure>
+					<div class="right-arrow">
 						<img class="pointer" src="assets/chev-right.png">
-					</figure>
+					</div>
+					<div class="left-arrow">
+						<img class="pointer" src="assets/chev-left.png" >
+					</div>
 				</article>
 				<div id="slider-bottom"></div>
 			</section>
 
 			<section>
-				<article class="services">
+				<article class="services"  id="services">
 					<div class="services-header">
-						<h2>Our Services</h2>
+						<h2 >Our Services</h2>
 						<p class="services-p">
 							Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
 						</p>
@@ -127,52 +169,52 @@
 					
 				</div>
 			</section>
-			<section id="portfolio">
+			<section class="portfolio" id="portfolio-top-nav">
 				<div id="portfolio-top">
-					<p id="portfolio-header">Portfolio</p>
+					<p class="portfolio-header" >Portfolio</p>
 					<p id="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				</div>
 				<div>
 					<ul id ="portfolio-nav">
-						<il class="portfolio-nav-li" id="portfolio-nav-li">All</il>
-						<il class="portfolio-nav-li">Web Design</il>
-						<il class="portfolio-nav-li">Graphic Design</il>
-						<il class="portfolio-nav-li">Artwork</il>
+						<li class="portfolio-nav-li portfolio-nav-li-active" onclick="handleTagClick(this, 'all');">All</li>
+						<li class="portfolio-nav-li" onclick="handleTagClick(this, 'web');">Web Design</li>
+						<li class="portfolio-nav-li" onclick="handleTagClick(this, 'graphic');">Graphic Design</li>
+						<li class="portfolio-nav-li" onclick="handleTagClick(this, 'artwork');">Artwork</li>
 					</ul>
 				</div>
 
 				<div id="portfolio-items">
-				<img src="assets/Portfolio-item-11.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-11.png" class="portfolio-item web">
 
-				<img src="assets/Portfolio-item-12.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-12.png" class="portfolio-item web">
 
-				<img src="assets/Portfolio-item-13.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-13.png" class="portfolio-item graphic">
 
-				<img src="assets/Portfolio-item-14.png" class="portfolio-item">	
+				<img src="assets/Portfolio-item-14.png" class="portfolio-item artwork">	
 
-				<img src="assets/Portfolio-item-21.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-21.png" class="portfolio-item artwork">
 
-				<img src="assets/Portfolio-item-22.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-22.png" class="portfolio-item graphic">
 
-				<img src="assets/Portfolio-item-23.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-23.png" class="portfolio-item artwork">
 
-				<img src="assets/Portfolio-item-24.png" class="portfolio-item">	
+				<img src="assets/Portfolio-item-24.png" class="portfolio-item web">	
 
-				<img src="assets/Portfolio-item-31.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-31.png" class="portfolio-item graphic">
 
-				<img src="assets/Portfolio-item-32.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-32.png" class="portfolio-item artwork">
 
-				<img src="assets/Portfolio-item-33.png" class="portfolio-item">
+				<img src="assets/Portfolio-item-33.png" class="portfolio-item web">
 
-				<img src="assets/Portfolio-item-34.png" class="portfolio-item">	
+				<img src="assets/Portfolio-item-34.png" class="portfolio-item graphic">	
 				</div>
 
 				<div id="portfolio-bottom"></div>	
 			</section>
 
 			<section id="about-us">
-				<div class="about-us-header">
-					<p id="about-us-title">About Us</p>
+				<div class="about-us-header" id="about">
+					<p class="about-us-title">About Us</p>
 					<p id="about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 				</div>
 				<div class="about-us-items">
@@ -249,40 +291,40 @@
 				</div>
 				<div id="about-us-bottom"></div>
 			</section>
-			<section class="get-a-quote">
+			<section class="get-a-quote " id="contact">
 				<div class="get-a-quote-header">
-					<p>Get a Quote</p>
+					<p >Get a Quote</p>
 					<p id="get-a-quote-header-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 				</div>
 
 				<div class="get-a-quote-form">
 					<div class="get-a-quote-form-items">
-						<form action="">
+						<form action="" onsubmit="return false">
 							 <div class="name">
-			          			<input type="text" name="name"  placeholder ="Name (Required)" title="Name" required>
+			          			<input class="form-input" type="text" name="name"  placeholder ="Name (Required)" title="Name" required>
 		        			</div>
 
 		        			<div class="Email">
-			       				<input type="email" name="email" placeholder="Email (Required)" title="mail" required  >
+			       				<input   class="form-input" type="email" name="email" placeholder="Email (Required)" title="mail" required  >
 		        			</div>
 
 		        			<div class="subject">
-			          			<input type="text" name="subject" placeholder="Subject">
+			          			<input  class="form-input" type="text" name="subject" placeholder="Subject" value="">
 		        			</div>
 
 		        			<div>
-			        			 <textarea name="text" placeholder="Describe your project in detail..."></textarea>
+			        			 <textarea  class="form-input" name="text" placeholder="Describe your project in detail..." value=""></textarea>
 			        		</div>
 
 			        		<div id="submit">
-			        			<input type="submit" value="Submit">
+			        			<input type= "submit" class="submit" value="Submit">
 			        		</div>
 						</form>
 					</div>
 
 					<div class="get-a-quote-form-contacts">
 						<div class="get-a-quote-form-contacts-info">
-							<p id="get-a-quote-form-contacts-info">Contact Information</p>
+							<p class="get-a-quote-form-contacts-info-title">Contact Information</p>
 							<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
 						</div>
 						<div>
@@ -341,5 +383,6 @@
 			</section>
 		</footer>
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
