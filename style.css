@@ -799,6 +799,14 @@ nav a {
 		width: 100%;
 	}
 
+	.services-items {
+		flex-basis: 50%; 
+	}
+
+	.services-item {
+		flex-basis: 50%; 
+	}
+
 	.pointer {
 		cursor: pointer;
 	}
