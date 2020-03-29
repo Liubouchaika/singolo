@@ -1143,15 +1143,26 @@ nav a {
     	overflow: hidden;*/
 	}
 
+	#portfolio-items img {
+		display: none;
+	}
+
+	#portfolio-items img:nth-child(1),
+	#portfolio-items img:nth-child(2),
+	#portfolio-items img:nth-child(3),
+	#portfolio-items img:nth-child(4),
+	#portfolio-items img:nth-child(5),
+	#portfolio-items img:nth-child(6),
+	#portfolio-items img:nth-child(7),
+	#portfolio-items img:nth-child(8) {
+		display: flex;
+	}
+
 	.portfolio-item {
 		width: 48%;
 		margin-bottom: 4%;
 		height: auto;
 		display: flex;
-	}
-
-	.unvisible  {
-		display: none;
 	}
 
 	.about-us-header {
